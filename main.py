@@ -79,7 +79,7 @@ print(count_comments)
 # Вывод всей информации в текстоовый документ
 for i in range(len(arr_favourite_name)):
     f.write('Товары: '+ arr_favourite_name[i] +'\n'+ 'Цена: '+ arr_favourite_price[i]+'\n'+
-            'Кол-во отзывов: '+'\n')
+            'Кол-во отзывов: ' + '\n')
 
 
 f.close()
