@@ -1,14 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-import fake_useragent
+
 
 
 session = requests.Session()
 link = 'https://siriust.ru/'
-user = fake_useragent.UserAgent().random
 f = open('result.txt', "w", encoding="utf-8")
 
-login = input('Введите логин: ')
+login = input('Введите email: ')
 pasword = input('Введите пароль: ')
 header = {
     'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.3.719 Yowser/2.5 Safari/537.36"
@@ -131,7 +130,4 @@ for i in range(len(arr_favourite_name)):
     f.write('--------------------------------------------------------------------------'+'\n')
 f.close()
 
-# закончил на выводе комментов, НАКОНЕЦ ИХ СДЕЛАЛ. нужно сделать еще
-# 1. с пагинацией вывод
-# 3. Количество магазинов в которых есть товар
 
